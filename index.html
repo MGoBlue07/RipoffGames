@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Ripoff Games</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="text-align: center; vertical-align: center-align; font-size: 50px; font-weight: bold;">The Best Ripoff Games There Are</h1>
+
+            <div class="homeButton"><button style="width: 110px; height: 40px; background-color: #b2b2b2; outline-color: black;">Home</button></div>
+        </div>
+          
+        <div class="Games">
+            <div class="AmongUs">
+                <img src="Images/AmongUsPicture.PNG" style="width: 240px; height: 160px;" onclick=OpenAmongUs()>
+                <p style="position: absolute; top: 175px; left: 35px;">Among Us: Battle Royale</p>
+            </div>
+            <div class="Minecraft">
+                <img src="Images/MinecraftPicture.PNG" style="width: 240px; height: 160px;" onclick=OpenMinecraft()>
+                <p style="position: absolute; top: 175px; left: 80px;">Minecraft</p>
+            </div>
+        </div>
+
+
+        <script>
+            function OpenAmongUs() {
+                window.location.href = "AmongUs/index.html";
+            }
+            function OpenMinecraft() {
+                window.location.replace("Minecraft/index.html");
+            }
+            function GoToHomePage() {
+                window.location.replace("/index.html");
+            }
+        </script>
+    </body>
+</html>

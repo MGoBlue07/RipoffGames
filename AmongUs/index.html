@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Among Us: Battle Royale</title>
+    <link rel="shortcut icon" href="Icon.jpg">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Web.json", {onProgress: UnityProgress});
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="text-align: center; vertical-align: center-align; font-size: 50px; font-weight: bold;">The Best Ripoff Games There Are</h1>
+
+      <div class="homeButton"><button style="width: 110px; height: 40px; background-color: #b2b2b2; outline-color: black;" onclick=GoToHomePage();>Home</button></div>
+    </div>
+
+    <div class="webgl-content" style="position: absolute; top: 400px;">
+      <div id="unityContainer" style="width: 800px; height: 500px;"></div>
+    </div>
+
+    <script>
+      function GoToHomePage() {
+        window.location.replace("/index.html");
+      }
+    </script>
+  </body>
+</html>

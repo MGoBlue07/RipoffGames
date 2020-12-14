@@ -22,15 +22,22 @@
                 <img src="Images/MinecraftPicture.PNG" style="width: 240px; height: 160px;" onclick=OpenMinecraft()>
                 <p style="position: absolute; top: 175px; left: 80px;">Minecraft</p>
             </div>
+            <div class="BaguetteClicker">
+                <img src="Images/BaguetteClickerPicture.PNG" style="width: 240px; height: 160px;" onclick=OpenBaguetteClicker()>
+                <p style="position: absolute; top: 175px; left: 65px;">Baguette Clicker</p>
+            </div>
         </div>
 
 
         <script>
             function OpenAmongUs() {
-                window.location.href = "AmongUs/index.html";
+                window.location.replace("AmongUs/index.html");
             }
             function OpenMinecraft() {
                 window.location.replace("Minecraft/index.html");
+            }
+            function OpenBaguetteClicker() {
+                window.location.replace("BaguetteClicker/index.html");
             }
             function GoToHomePage() {
                 window.location.href = "https://mgoblue07.github.io/CursedRipoffs/";
